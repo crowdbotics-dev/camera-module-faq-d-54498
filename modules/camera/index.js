@@ -37,7 +37,7 @@ const Camera = () => {
   const renderItem = ({ item }) => (
     <TouchableOpacity>
       <ImageBackground
-        source={{ uri: `${gOptions.url}/${item.image}` }}
+        source={{ uri: `${item.image}` }}
         style={styles.image}
       ></ImageBackground>
     </TouchableOpacity>
