@@ -36,7 +36,7 @@ const ProductDetails = () => {
         <View style={styles.bar} />
         <Text style={styles.title}>{product.name}</Text>
         <Text style={styles.description}>{product.description}</Text>
-        <Slider minimumValue={1} maximumValue={3} step={1} value="0" onValueChange={setSize} minimumTrackTintColor="#ECECEC" maximumTrackTintColor="#ECECEC" thumbTintColor="#EA4335" thumbStyle={styles.thumb} trackStyle={styles.track} />
+        <Slider minimumValue={1} maximumValue={3} step={1} value={2} onValueChange={setSize} minimumTrackTintColor="#ECECEC" maximumTrackTintColor="#ECECEC" thumbTintColor="#EA4335" thumbStyle={styles.thumb} trackStyle={styles.track} />
         <View style={styles.flexRow}>
           {["Small", "Medium", "Large"].map((item, index) => <Text key={index} style={[styles.sizeText, index === size - 1 ? styles.boldSizeText : null]}>
               {item}
