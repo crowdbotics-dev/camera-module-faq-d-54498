@@ -79,7 +79,7 @@ const HotelAmenities = () => {
 
   const getIcon = name => {
     const icon = icons.find(item => item.name === name);
-    return icon.image;
+    return icon?.image;
   };
 
   return <View style={styles.container}>
